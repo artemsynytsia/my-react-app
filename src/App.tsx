@@ -1,10 +1,12 @@
-import { FirstPage } from "./components/FirstPages/mainText";
-
+import { FirstPage } from "./components/FirstPage/mainText";
+import styles from "./components/FirstPage/mainText.module.css";
+import bg1 from "./assets/bg1.png";
 function App() {
   return (
     <FirstPage
+      img={bg1}
       title="СЕЛЕКЦІЯ ПОСЛУГ"
-      subtitle="  ПЕРСОНАЛЬНА СТИЛІСТКА КРІСТІНА ДУТЧАК"
+      subtitle="ПЕРСОНАЛЬНОЇ СТИЛІСТКИ КРІСТІНИ ДУТЧАК"
     />
   );
 }
