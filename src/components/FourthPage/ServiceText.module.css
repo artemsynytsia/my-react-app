@@ -1,0 +1,32 @@
+.containerFourthPage {
+  position: relative; /* краще, ніж absolute для секції */
+  background: rgba(0, 0, 0, 0.2); /* або прибери, якщо заважає */
+  overflow: hidden;
+  height: 850px;
+  display: flex; /* щоб працювали align-items і justify-content */
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.textContainer {
+  padding-top: 106px;
+}
+
+.text {
+  position: relative;
+  z-index: 1000;
+  color: white;
+  font-size: 55px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+}

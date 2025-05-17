@@ -1,0 +1,24 @@
+.containerThirdPage {
+  position: relative;
+  width: 100%;
+  height: 910px;
+  border-bottom: 6px #fff solid;
+}
+.backgroundImage {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.text {
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 20px;
+  padding-top: 20px;
+  line-height: 25px;
+}
