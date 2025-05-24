@@ -49,4 +49,5 @@
 
   object-fit: cover;
   z-index: 1;
+  filter: brightness(0.8); /* або 0.7 — затемнює */
 }

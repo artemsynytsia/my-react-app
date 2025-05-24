@@ -6,6 +6,7 @@
   display: flex; /* щоб працювали align-items і justify-content */
   align-items: center;
   justify-content: center;
+  border-bottom: 6px #fff solid;
 }
 
 .backgroundImage {
@@ -15,6 +16,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  filter: brightness(0.8); /* або 0.7 — затемнює */
   z-index: 0;
 }
 .textContainer {
