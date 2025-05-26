@@ -5,12 +5,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: #a0a0a0;
-  transition: padding-bottom 0.4s ease;
-  padding-bottom: 20px; /* базовий відступ, або 0 */
+  transition: padding-bottom 1.8s ease;
+  padding-bottom: 20px;
+  border-bottom: 6px #fff solid;
 }
 
 .containerFifthPageExpanded {
-  padding-bottom: 1900px; /* або скільки потрібно, щоб вміст помістився */
+  padding-bottom: 1720px;
 }
 
 .containerText {
@@ -25,13 +26,12 @@
 .backgroundImage {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 38%;
   height: 640px;
+  transition: opacity 0.5s ease-in-out, transform 0.5 ease-in-out;
 }
 .backgroundImageShifted {
-  transform: translateY(60px);
-  transform: scaleX(500px);
+  transform: translateY(0%);
 }
 .titleText {
   font-size: 32px;
@@ -57,6 +57,4 @@
   cursor: pointer;
   background-color: #d9d9d9;
   border: none;
-}
-.detailsButton {
 }

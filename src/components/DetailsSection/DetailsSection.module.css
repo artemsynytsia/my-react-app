@@ -1,35 +1,63 @@
 .detailsBlock {
-  padding-left: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline-start: 40px;
-  text-align-last: left;
+  opacity: 0.4;
+  overflow: hidden;
+  transform: translateY(84%);
+  transition: max-height 1s ease, opacity 1s ease, transform 1s ease,
+    padding-left 1s ease;
+  padding-left: 0;
 }
 
-.textTitle {
+.detailsVisible {
+  max-height: 1000px;
+  opacity: 1;
+
+  padding-left: 600px;
+}
+
+.detailsHidden {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(0px);
+  padding: 0;
+}
+.FirstTextSection {
+  width: 350px;
+  margin-bottom: 55px;
+}
+
+.SecondTextSection {
+  margin-bottom: 55px;
+  width: 400px;
+}
+
+.ThirdTextSection {
+  margin-bottom: 55px;
+}
+
+.titleText {
   font-size: 28px;
   font-weight: 1000;
-  margin-bottom: 30px;
+  margin: 30px 0px;
 }
+
 .textParagraph1,
 .textParagraph2 {
   font-weight: 500;
   font-size: 16px;
-  line-height: 15px; /* або 28px, залежно від базового розміру */
-  margin-bottom: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  width: 360px;
 }
-
 .textInfo {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 18px;
 }
-.FirstTextSection {
-  width: 350px;
-  margin-bottom: 30px;
+.infoList {
+  list-style-type: disc;
+  padding-left: 0;
 }
-.SecondTextSection {
-  margin-bottom: 30px;
-  padding-left: 60px;
+
+.infoList li::marker {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
 }

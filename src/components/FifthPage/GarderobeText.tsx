@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./GarderobeText.module.css";
 import { DetailsSection } from "../DetailsSection/DetailsSection.tsx";
+
 type FifthPageProps = {
   img: string;
   title: string;
@@ -21,6 +22,22 @@ export const FifthPage = ({
   details,
 }: FifthPageProps) => {
   const [showDetails, setShowDetails] = useState(false);
+  const [renderDetails, setRenderDetails] = useState(false);
+
+  const toggleDetails = () => {
+    if (!showDetails) {
+      setRenderDetails(true);
+      setTimeout(() => setShowDetails(true), 10);
+    } else {
+      setShowDetails(false);
+    }
+  };
+
+  const onTransitionEnd = () => {
+    if (!showDetails) {
+      setRenderDetails(false);
+    }
+  };
 
   return (
     <div
@@ -45,35 +62,40 @@ export const FifthPage = ({
           <p className={styles.online}>{text4}</p>
         </div>
 
-        <button
-          onClick={() => setShowDetails(!showDetails)}
-          className={styles.detailsButton}
-        >
+        <button onClick={toggleDetails} className={styles.detailsButton}>
           {showDetails ? "СХОВАТИ" : "ДЕТАЛЬНІШЕ"}
         </button>
       </div>
-      {showDetails && (
-        <DetailsSection
-          visible={showDetails}
-          title1="ЩО ЦЕ?"
-          text1="Комплексний аналіз вашого гардероба: від впорядкування речей до формування стильних і функціональних образів із урахуванням нових елементів."
-          text2="Після цього ви з легкістю складатимете актуальні комплекти, забувши про дилему «що одягнути»."
-          title2="ЩО ВИ ОТРИМУЄТЕ?"
-          items1={[
-            "Ясність у тому, які речі справді необхідні",
-            "Зібрані образи без зайвих витрат і безладу",
-            "Продуманий план для грамотного оновлення гардероба",
-          ]}
-          title3="ЯК ВІДБУВАЄТЬСЯ?"
-          items2={[
-            "Анкетування",
-            "Систематизація гардероба за категоріями",
-            "Визначення речей для адаптації або вилучення",
-            "Створення шопінг-листа для оновлення",
-            "Формування 50 готових образів",
-            "Супровід протягом місяця після розбору",
-          ]}
-        />
+
+      {renderDetails && (
+        <div
+          className={`${styles.detailsContainer} ${
+            showDetails ? styles.open : ""
+          }`}
+          onTransitionEnd={onTransitionEnd}
+        >
+          <DetailsSection
+            visible={showDetails}
+            title1="ЩО ЦЕ?"
+            text1="Комплексний аналіз вашого гардероба: від впорядкування речей до формування стильних і функціональних образів із урахуванням нових елементів."
+            text2="Після цього ви з легкістю складатимете актуальні комплекти, забувши про дилему «що одягнути»."
+            title2="ЩО ВИ ОТРИМУЄТЕ?"
+            items1={[
+              "Ясність у тому, які речі справді необхідні",
+              "Зібрані образи без зайвих витрат і безладу",
+              "Продуманий план для грамотного оновлення гардероба",
+            ]}
+            title3="ЯК ВІДБУВАЄТЬСЯ?"
+            items2={[
+              "Анкетування",
+              "Систематизація гардероба за категоріями",
+              "Визначення речей для адаптації або вилучення",
+              "Створення шопінг-листа для оновлення",
+              "Формування 50 готових образів",
+              "Супровід протягом місяця після розбору",
+            ]}
+          />
+        </div>
       )}
     </div>
   );

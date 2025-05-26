@@ -36,7 +36,7 @@ export const DetailsSection = ({
 
       <div className={styles.SecondTextSection}>
         <h1 className={styles.titleText}>{title2}</h1>
-        <ul>
+        <ul className={styles.infoList}>
           {items1.map((item, index) => (
             <li className={styles.textInfo} key={index}>
               {item}
@@ -47,7 +47,7 @@ export const DetailsSection = ({
 
       <div className={styles.ThirdTextSection}>
         <h1 className={styles.titleText}>{title3}</h1>
-        <ul className={styles.textInfo}>
+        <ul className={styles.infoList}>
           {items2.map((item, index) => (
             <li className={styles.textInfo} key={index}>
               {item}
