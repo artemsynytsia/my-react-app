@@ -1,9 +1,9 @@
 .containerFourthPage {
-  position: relative; /* краще, ніж absolute для секції */
-  background: rgba(0, 0, 0, 0.2); /* або прибери, якщо заважає */
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
   overflow: hidden;
   height: 850px;
-  display: flex; /* щоб працювали align-items і justify-content */
+  display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 6px #fff solid;
@@ -16,7 +16,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: brightness(0.8); /* або 0.7 — затемнює */
+  filter: brightness(0.8);
   z-index: 0;
 }
 .textContainer {

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from "./GarderobeText.module.css";
+import styles from "./ShopingDetails.module.css";
 import { DetailsSection } from "../DetailsSection/DetailsSection.tsx";
 
-type FifthPageProps = {
+type SeventhPageProps = {
   img: string;
   title: string;
   text1: string;
@@ -11,14 +11,14 @@ type FifthPageProps = {
   text4: string;
 };
 
-export const FifthPage = ({
+export const SeventhPage = ({
   img,
   title,
   text1,
   text2,
   text3,
   text4,
-}: FifthPageProps) => {
+}: SeventhPageProps) => {
   const [showDetails, setShowDetails] = useState(false);
   const [renderDetails, setRenderDetails] = useState(false);
 
@@ -45,7 +45,7 @@ export const FifthPage = ({
     >
       <img
         src={img}
-        alt="Фонове зображення 5"
+        alt="Фонове зображення 7"
         className={`${styles.backgroundImage} ${
           showDetails ? styles.backgroundImageShifted : ""
         }`}
@@ -75,8 +75,8 @@ export const FifthPage = ({
           <DetailsSection
             visible={showDetails}
             title1="ЩО ЦЕ?"
-            text1="Комплексний аналіз вашого гардероба: від впорядкування речей до формування стильних і функціональних образів із урахуванням нових елементів."
-            text2="Після цього ви з легкістю складатимете актуальні комплекти, забувши про дилему «що одягнути»."
+            text1="Детальний аналіз ваших зовнішніх даних та особливостей фігури для створення гармонійного стилю, що підкреслює вашу індивідуальність."
+            text2=""
             title2="ЩО ВИ ОТРИМУЄТЕ?"
             items1={[
               "Ясність у тому, які речі справді необхідні",

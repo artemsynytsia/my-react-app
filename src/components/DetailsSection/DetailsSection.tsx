@@ -1,4 +1,3 @@
-import { FirstPage } from "../FirstPage/mainText";
 import styles from "./DetailsSection.module.css";
 
 type DetailsSectionProps = {

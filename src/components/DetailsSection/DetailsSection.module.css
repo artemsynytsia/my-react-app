@@ -1,25 +1,19 @@
 .detailsBlock {
-  opacity: 0.4;
-  overflow: hidden;
-  transform: translateY(84%);
-  transition: max-height 1s ease, opacity 1s ease, transform 1s ease,
-    padding-left 1s ease;
-  padding-left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
 }
 
 .detailsVisible {
-  max-height: 1000px;
   opacity: 1;
-
-  padding-left: 600px;
+  pointer-events: auto;
 }
 
 .detailsHidden {
-  max-height: 0;
   opacity: 0;
-  transform: translateY(0px);
-  padding: 0;
+  pointer-events: none;
 }
+
 .FirstTextSection {
   width: 350px;
   margin-bottom: 55px;
