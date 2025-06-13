@@ -1,6 +1,15 @@
 import styles from "./ServiceText.module.css";
+import { useResponsive } from "../../hook/useResponsive";
 
-export const FourthPage = ({ img, text }: { img: string; text: string }) => {
+type FourthPageProps = {
+  img: string;
+  text: string;
+  mobileText: string; //  для мобілки
+};
+
+export const FourthPage = ({ img, text, mobileText }: FourthPageProps) => {
+  const { isMobile } = useResponsive();
+
   return (
     <div className={styles.containerFourthPage}>
       <img
@@ -9,7 +18,7 @@ export const FourthPage = ({ img, text }: { img: string; text: string }) => {
         className={styles.backgroundImage}
       />
       <div className={styles.textContainer}>
-        <h1 className={styles.text}>{text}</h1>
+        <h1 className={styles.text}>{isMobile ? mobileText : text}</h1>
       </div>
     </div>
   );

@@ -24,7 +24,6 @@
 }
 .titleText {
   font-size: 55px;
-  font-size: 55px;
   font-weight: 900;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -55,4 +54,82 @@ li {
   line-height: 45px;
   margin-bottom: 20px;
   right: 20px;
+}
+@media (min-width: 380px) and (max-width: 430px) {
+  .containerSecondPage {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 850px;
+  }
+  .backgroundImage {
+    width: auto;
+    height: 500px;
+    margin-left: 41%;
+    transform: translateY(-27%);
+  }
+  .textContainer {
+    line-height: 0;
+    transform: none;
+    margin-top: 22px;
+  }
+  .titleText {
+    font-size: 55px;
+    margin: 0;
+  }
+  .subtitleText {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .listService {
+    padding: 0;
+    margin: 0;
+    width: 280px;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  li {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 431px) and (max-width: 1200px) {
+  .containerSecondPage {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 850px;
+  }
+  .backgroundImage {
+    width: auto;
+    height: 500px;
+    margin-left: 41%;
+    transform: translateY(-20%);
+  }
+  .textContainer {
+    line-height: 0;
+    transform: none;
+    margin-top: 22px;
+  }
+  .titleText {
+    font-size: 55px;
+    margin: 0;
+  }
+  .subtitleText {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .listService {
+    padding: 0;
+    margin: 0;
+    width: 280px;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  li {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

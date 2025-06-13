@@ -6,6 +6,7 @@ import { FifthPage } from "./components/FifthPage/GarderobeText.tsx";
 import { SixthPage } from "./components/SixthPage/FaceDetails.tsx";
 import { SeventhPage } from "./components/SeventhPage/ShopingDetails.tsx";
 import { TenthPage } from "./components/TenthPage/Contacts.tsx";
+import { useResponsive } from "./hook/useResponsive.ts";
 
 import bg1 from "./assets/bg1.png";
 import bg2 from "./assets/bg2.png";
@@ -19,6 +20,7 @@ import bg9 from "./assets/bg9.png";
 import bg10 from "./assets/bg10.png";
 
 function App() {
+  const { isMobile } = useResponsive();
   const repeatedFifthPages = [
     {
       img: bg8,
@@ -54,13 +56,14 @@ function App() {
           "Допомагаю знайти баланс між стилем і комфортом",
           "Підбираю одяг, що відображає ваш спосіб життя",
         ]}
+        isMobile={isMobile}
       />
       <ThirdPage
         img={bg3}
         text1="Робота над власним стилем зі мною – це вибір професіоналізму та експертного підходу. Я дипломована випускниця школи стилю MODETON, і для мене найважливіше – це високий рівень кваліфікації та увага до деталей"
         text2="Моє головне завдання — допомогти вам знайти ідеальний баланс між комфортом, модою та вашою індивідуальністю. Кожен клієнт для мене — це унікальний проєкт, де я застосовую експертний підхід, орієнтуючись на ваші потреби та стиль життя"
       />
-      <FourthPage img={bg4} text="ПОСЛУГИ, ЯКІ НАДАЮ" />
+      <FourthPage img={bg4} text="ПОСЛУГИ, ЯКІ НАДАЮ" mobileText="ПОСЛУГИ" />
       <FifthPage
         img={bg5}
         title="РОЗБІР ГАРДЕРОБA"

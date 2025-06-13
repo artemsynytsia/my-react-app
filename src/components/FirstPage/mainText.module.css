@@ -49,5 +49,41 @@
 
   object-fit: cover;
   z-index: 1;
-  filter: brightness(0.8); /* або 0.7 — затемнює */
+  filter: brightness(0.8);
+}
+@media (min-width: 380px) and (max-width: 420px) {
+  .containerText {
+    margin-left: 20px;
+    padding-top: 230px;
+    text-align: left;
+  }
+
+  .backgroundImage {
+    left: -320px;
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: 1000px;
+  }
+  .titleText {
+    line-height: 80px;
+  }
+  .subtitleText {
+    line-height: 102%;
+    margin-top: 14px;
+  }
+}
+@media (min-width: 420px) and (max-width: 650px) {
+  .containerText {
+    margin-left: 50px;
+    padding-top: 170px;
+    text-align: left;
+  }
+  .backgroundImage {
+    left: 0;
+  }
+  .containerText {
+    margin-top: 50%;
+    align-items: center;
+  }
 }

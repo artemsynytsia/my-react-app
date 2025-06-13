@@ -57,6 +57,7 @@
   cursor: pointer;
   background-color: #d9d9d9;
   border: none;
+  color: black;
 }
 .detailsContainer {
   padding-top: 98%;
@@ -71,4 +72,40 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+}
+@media (min-width: 380px) and (max-width: 420px) {
+  .containerFifthPage {
+    height: 900px;
+  }
+  .containerFifthPageExpanded {
+    padding-bottom: 1900px;
+  }
+  .detailsContainer {
+    padding-top: 404%;
+    padding-left: 24px;
+  }
+  .backgroundImage {
+    left: -8%;
+    top: 28.5%;
+    transition: opacity 0s ease-in-out, transform 0.5 ease-in-out;
+  }
+  .backgroundImageShifted {
+    transform: translateY(112.2%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+}
+@media (min-width: 420px) and (max-width: 500px) {
+  .detailsContainer {
+    padding-top: 350%;
+    padding-left: 32px;
+  }
+  .backgroundImage {
+    left: -8%;
+    top: 22.3%;
+    transition: opacity 0s ease-in-out, transform 0.5 ease-in-out;
+  }
+  .backgroundImageShifted {
+    transform: translateY(109%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
 }
