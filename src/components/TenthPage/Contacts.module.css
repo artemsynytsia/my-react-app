@@ -50,7 +50,6 @@
 @media (min-width: 380px) and (max-width: 420px) {
   .backgroundImage {
     position: absolute;
-    /* top: 1%; */
     right: -200px;
     width: auto;
     height: 1000px;
@@ -78,7 +77,6 @@
 @media (min-width: 420px) and (max-width: 450px) {
   .backgroundImage {
     position: absolute;
-    /* top: 1%; */
     right: -200px;
     width: auto;
     height: 1000px;
@@ -89,6 +87,92 @@
     width: 300px;
     line-height: 54px;
   }
+  .textMain {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    width: 361px;
+    line-height: 30px;
+  }
+  .textNumber {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .textContainer {
+    margin-left: 18px;
+  }
+}
+@media (min-width: 420px) and (max-width: 450px) {
+  .backgroundImage {
+    position: absolute;
+    right: -200px;
+    width: auto;
+    height: 1000px;
+  }
+
+  .textTitle {
+    font-size: 38px;
+    font-weight: 900;
+    width: 300px;
+    line-height: 54px;
+  }
+  .textMain {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    width: 361px;
+    line-height: 30px;
+  }
+  .textNumber {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+@media (min-width: 450px) and (max-width: 500px) {
+  .backgroundImage {
+    position: absolute;
+    right: -200px;
+    width: auto;
+    height: 1000px;
+  }
+  .textTitle {
+    font-size: 38px;
+    font-weight: 900;
+    width: 300px;
+    line-height: 54px;
+  }
+  .textMain {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    width: 361px;
+    line-height: 30px;
+  }
+  .textNumber {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .textContainer {
+    margin-left: 18px;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  .backgroundImage {
+    position: absolute;
+    right: -200px;
+    width: auto;
+    height: 1000px;
+  }
+  .textTitle {
+    font-size: 55px;
+    font-weight: 900;
+    width: 300px;
+    line-height: 54px;
+  }
+
   .textMain {
     margin-top: 20px;
     font-size: 24px;

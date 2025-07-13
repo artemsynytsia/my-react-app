@@ -94,16 +94,16 @@ li {
     line-height: 22px;
   }
 }
-@media (min-width: 431px) and (max-width: 1200px) {
+@media (min-width: 431px) and (max-width: 768px) {
   .containerSecondPage {
     display: flex;
     flex-direction: column;
     padding: 0;
-    height: 850px;
+    height: 1000px;
   }
   .backgroundImage {
     width: auto;
-    height: 500px;
+    height: 700px;
     margin-left: 41%;
     transform: translateY(-20%);
   }
@@ -131,5 +131,99 @@ li {
     font-weight: 300;
     font-size: 20px;
     line-height: 22px;
+  }
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  .containerSecondPage {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 1000px;
+  }
+  .backgroundImage {
+    width: auto;
+    height: 700px;
+    margin-left: 41%;
+    transform: translateY(22%);
+  }
+  .textContainer {
+    line-height: 0;
+    transform: none;
+    margin-top: 22px;
+  }
+  .titleText {
+    font-size: 55px;
+    margin: 0;
+  }
+  .subtitleText {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .listService {
+    padding: 0;
+    margin: 0;
+    width: 280px;
+    margin-top: 0px;
+    margin-right: 50px;
+    transform: translateY(-200%);
+  }
+  li {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .containerSecondPage {
+    background-color: #a0a0a0;
+    display: flex;
+    height: 900px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 6px #fff solid;
+  }
+  .backgroundImage {
+    /*   margin-bottom: 135px; */
+
+    transform: translateX(-30%);
+    height: 900px;
+  }
+  .textContainer {
+    margin-left: 24px;
+    align-items: start;
+    /*  margin-top: 100px; */
+  }
+  .titleText {
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    line-height: 60px;
+  }
+  .subtitleText {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 22px;
+    width: 370px !important;
+  }
+  .listService {
+    transform: translateX(-16em);
+    width: 450px;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+  }
+  li {
+    font-size: 24px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    right: 20px;
   }
 }
